@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Limona</title>
+  <link rel="stylesheet" href="estilo_limpio.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="#inicio">INICIO</a>
+        <a href="#galeria">GALERIA</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#testimonios">TESTIMONIOS</a>
+        <a href="#contacto">CONTACTO</a>
+      </div>
+      
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="nav-links mobile" id="mobileMenu">
+        <a href="#inicio" onclick="closeMenu()">INICIO</a>
+        <a href="#galeria" onclick="closeMenu()">GALERIA</a>
+        <a href="#servicios" onclick="closeMenu()">SERVICIOS</a>
+        <a href="#testimonios" onclick="closeMenu()">TESTIMONIOS</a>
+        <a href="#contacto" onclick="closeMenu()">CONTACTO</a>
+      </div>
+    </nav>
+
+    <div class="header-img-container">
+      <img src="Imagenes\logo-con-bajada_sin_fondo_blanco.png" alt="Logo Limona" class="header-img">
+    </div>
+  </header>
+
+  <div class="svg-editado">
+    <img src="Imagenes\e8-vectorial.svg" alt="Logo Limona" class="svg-liston">
+  </div>
+
+  <section id="inicio" class="inicio">
+    <img src="Imagenes\edit.png" alt="Logo Limona" class="inicio-img">
+    <p>¿Te gustaría celebrar en Limona?</p>
+    <p>
+      Limona fue una de esas palabras mágicas que aparecen cuando los más chicos empiezan a hablar.
+      Así llamaba nuestra hija a la limonada. Nos hizo reír, nos enterneció… y sin saberlo, nos regaló el nombre
+      perfecto para este proyecto familiar que hoy es realidad.
+    </p>
+    <p>
+      Limona es un salón creado con amor, pensado para que grandes y chicos disfruten por igual.
+      Diseñamos un espacio cómodo, estético y versátil, con tonos neutros que combinan con todo y generan una
+      atmósfera linda, tranquila y alegre.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="barra-galeria">
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\flor.png" class="superpuesta" id="flor" alt="Decoración">
+      <img src="Imagenes\zigzag.png" class="superpuesta" id="zigzag" alt="Decoración">
+    </div>
+    
+    <div class="galeria-container">
+  <button class="galeria-btn galeria-btn-left" onclick="slideGaleria(-1)">
+    <span>&#8249;</span>
+  </button>
+  
+  <div class="galeria-wrapper">
+    <div class="galeria" id="galeriaSlider">
+      <!-- Aquí van todas tus fotos -->
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <img src="https://via.placeholder.com/200x150" alt="Galería"/>
+      <!-- Agrega hasta 70 imágenes aquí -->
+    </div>
+  </div>
+  
+  <button class="galeria-btn galeria-btn-right" onclick="slideGaleria(1)">
+    <span>&#8250;</span>
+  </button>
+</div>
+
+    <div class="barra-galeria">
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\prueba.png" alt="Galería"/>
+      <img src="Imagenes\nose.png" class="superpuesta" id="nose" alt="Decoración">
+      <img src="Imagenes\corazon.png" class="superpuesta" id="corazon" alt="Decoración">
+    </div>
+  </section>
+
+  <section id="servicios" class="section-servicios">
+    <h2>Servicios</h2>
+    <div class="div-servicios">
+      <div class="servicio">
+        <img src="Imagenes\1.svg" alt="Juegos">
+        JUEGOS
+      </div>
+      <div class="servicio">
+        <img src="Imagenes\2.svg" alt="Animación">
+        ANIMACIÓN
+      </div>
+      <div class="servicio">
+        <img src="Imagenes\3.svg" alt="Catering">
+        CATERING
+      </div>
+      <div class="servicio">
+        <img src="Imagenes\4.svg" alt="Decoración">
+        DECORACIÓN
+      </div>
+      <div class="servicio">
+        <img src="Imagenes\5.svg" alt="Personal">
+        PERSONAL
+      </div>
+      <div class="servicio">
+        <img src="Imagenes\6.svg" alt="Accesibilidad" class="img-accesibilidad">
+        ACCESIBILIDAD
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <!-- Imágenes decorativas -->
+    <img src="Imagenes\liston.png" class="decoracion liston1" alt="Decoración">
+    <img src="Imagenes\liston.png" class="decoracion liston2" alt="Decoración">
+    <img src="Imagenes\zigzag.png" class="decoracion zigzag-testimonio" alt="Decoración">
+    <img src="Imagenes\nose.png" class="decoracion nose-testimonio" alt="Decoración">
+    <img src="Imagenes\fruta.png" class="decoracion fruta" alt="Decoración">
+    <img src="Imagenes\coral.png" class="decoracion coral" alt="Decoración">
+    
+    <div class="encabezado">
+      <h2 class="subtitulo">Testimonios</h2>
+    </div>
+
+    <div class="div-testimonios">
+      <div class="contenido-testimonio">
+        <span>Testimonio</span>
+        <p>"Un lugar hermoso y acogedor para celebrar momentos especiales con la familia."</p>
+      </div>
+      <div class="contenido-testimonio">
+        <span>Testimonio</span>
+        <p>"El servicio es excelente y la atención al detalle es impresionante."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto-info">
+      <p>
+        <img src="Imagenes\7.svg" alt="Ubicación" class="icono-contacto" />
+        Capurro 779 entre Husares e Infantes
+      </p>
+      <p>
+        <img src="Imagenes\8.svg" alt="Teléfono" class="icono-contacto" />
+        098 199 071
+      </p>
+      <p>
+        <img src="Imagenes\9.svg" alt="Email" class="icono-contacto" />
+        <a href="mailto:hola@limona.com.uy">hola@limona.com.uy</a>
+      </p>
+      <p>
+        <img src="Imagenes\10.svg" alt="Web" class="icono-contacto" />
+        <a href="https://salonlimona.uy" target="_blank">@salonlimona.uy</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="frase-limona">
+    <div class="frase-contenedor">
+      <p class="frase">
+        <span class="texto">¿te gustaría celebrar en</span>
+        <img src="Imagenes\edit.png" alt="Limona" class="limona-img" />
+        <span class="signo">?</span>
+        <img src="Imagenes\flecha.jpg" alt="Curva decorativa" class="curva-img" />
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <img src="Imagenes\logo-principal-vectorial_editable.svg" class="img-footer" alt="Logo Limona"/>
+  </footer>
+
+  <a href="https://wa.me/59892822597" class="whatsapp-fijo" target="_blank" rel="noopener">
+    <img src="Imagenes\whatsapp_icon-icons.com_62756.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
