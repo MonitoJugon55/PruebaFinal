@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Limona</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* 
+      Preserving original font faces. 
+      Ensure the 'Fuentes' folder is in the public root for these to work locally.
+    */
+    @font-face {
+      font-family: 'Coco Gothic Light';
+      src: url('/nombre-de-tu-repo/assets/CocoGothic-Light_trial-B0NFUVdw.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Coco Gothic Italic Light';
+      src: url('/nombre-de-tu-repo/assets/CocoGothic-LightItalic_trial-vcM36Cld.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'FGAlison';
+      src: url('/nombre-de-tu-repo/assets/FGAlisonW00-Regular-DqHghlTi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Coco Gothic';
+      src: url('/nombre-de-tu-repo/assets/CocoGothic_trial-RbMutpWf.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Coco Gothic Ultra Light';
+      src: url('/nombre-de-tu-repo/assets/CocoGothic-UltraLight_trial-C1KK3_qg.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Custom scrollbar for better aesthetics */
+    html {
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FCF6ED;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C8B49B;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #56433e;
+    }
+
+    /* Helper to completely hide scrollbars as requested for Testimonials */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FCF6ED',
+            darkBrown: '#56433e',
+            gold: '#C8B49B',
+          },
+          fontFamily: {
+            coco: ['"Coco Gothic"', 'sans-serif'],
+            cocoLight: ['"Coco Gothic Light"', 'sans-serif'],
+            cocoItalic: ['"Coco Gothic Italic Light"', 'sans-serif'],
+            alison: ['"FGAlison"', 'serif'],
+            montserrat: ['"Montserrat"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/nombre-de-tu-repo/assets/index-Dr1Y5JAV.js"></script>
+</head>
+<body class="bg-cream text-darkBrown antialiased overflow-x-hidden">
+  <div id="root"></div>
+</body>
+</html>
